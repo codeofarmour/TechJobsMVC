@@ -25,6 +25,9 @@ namespace TechJobs.Controllers
             {
                 jobs = JobData.FindByValue(searchTerm);
             }
+
+            ViewBag.jobs = jobs;
+            return View("index");
         }
 
     }
